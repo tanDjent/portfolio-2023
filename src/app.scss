@@ -31,6 +31,108 @@ section {
   cursor: pointer;
 }
 
+.flex {
+  display: flex;
+
+  &-inline {
+    display: inline-flex;
+  }
+
+  &-col {
+    flex-direction: column;
+  }
+
+  &-rrow {
+    flex-direction: row-reverse;
+  }
+
+  &-rcol {
+    flex-direction: column-reverse;
+  }
+
+  &-wrap {
+    flex-wrap: wrap;
+  }
+}
+
+.align {
+  &-start {
+    align-items: flex-start;
+  }
+  &-center {
+    align-items: center;
+  }
+  &-end {
+    align-items: flex-end;
+  }
+
+  &-baseline {
+    align-items: baseline;
+  }
+}
+
+.justify {
+  &-center {
+    justify-content: center;
+  }
+
+  &-end {
+    justify-content: flex-end;
+  }
+
+  &-between {
+    justify-content: space-between;
+  }
+
+  &-around {
+    justify-content: space-around;
+  }
+
+  &-start {
+    justify-content: flex-start;
+  }
+}
+
+.text {
+  &-noselect {
+    user-select: none;
+  }
+
+  &-uppercase {
+    text-transform: uppercase;
+  }
+
+  &-capitalize {
+    text-transform: capitalize;
+  }
+  &-center {
+    text-align: center;
+  }
+  &-left {
+    text-align: left;
+  }
+  &-right {
+    text-align: right;
+  }
+  &-underline {
+    text-decoration: underline;
+  }
+  &-italic {
+    font-style: italic;
+  }
+
+  &-align {
+    &-center {
+      text-align: center;
+    }
+  }
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+}
+
 @mixin mobile {
   @media (max-width: 738px) {
     @content;
